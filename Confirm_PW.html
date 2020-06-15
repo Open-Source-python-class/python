@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <!--
-프로그램명: 홈페이지 로그인 화면
+프로그램명: 비밀번호를 확인하는 화면
 작성자 : 최성운
-수정일 : 2020-06-15
+수정일 : 2020-06-12
 팀명 : 파이썬클라스 (4조)
-프로그램 설명: 화면을 반으로 갈라서 왼쪽에는 로그인을 오른쪽에는 회원가입을 할 수 있는 페이지로 이동하도록 구현
+프로그램 설명: 비밀번호를 찾으면 찾은 비밀번호를 확인 하는 페이지 
+왼쪽에는 비밀번호를 확인하는 화면, 오른쪽에는 로그인을 할 수 있는 기능 구현
 -->
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup</title>
+    <title>Confirm_ID</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
     .box {
-        width: 100%;       
+        width: 100%;
+        
+        
         border: 1px solid black;
     }
     .left {
@@ -40,7 +43,16 @@
   <div>
     <div class="left">
       <center>
-        <h2 style="margin-top:100px; margin-bottom:50px;">로그인</h2>
+        <h2 style="margin-top:100px; margin-bottom:100px;">비밀번호 확인하기</h2>
+        <p>
+          찾은 비밀번호는 ㅁㅁㅁㅁㅁ입니다.
+        </p>
+      </center>
+
+    </div> 
+     <div class="right"style="background-image: url(images/12.jpg); background-size:cover;">
+     <center>
+        <h2 style="margin-top:100px; margin-bottom:50px;color:white">로그인</h2>
       </center>
       <form>
         <center>
@@ -52,21 +64,15 @@
             <label for="password"></label>
             <input type="password" class="form-control" name="password" placeholder="암호">
           </div>
-        <input type="submit" value="로그인하기" class="btn btn-primary btn-lg">
+        <input type="submit" value="로그인하기" class="btn btn-primary">
       </center>
       </form>
     </div> 
-     <div class="right"style="background-image: url(images/10.jpg); background-size:cover;">
-      <center>
-        <h2 style="margin-top:100px; margin-bottom:80px; color:white;">신규 회원가입</h2>
-      
-        <p style="color:white;text-align:middle;">
-          원활한 서비스 이용을 위해서 회원가입을 해주세요.
-          <li style="color:white;">상품 구매시 회원정보가 필요합니다.</li>
-          <li style="color:white;margin-bottom:66px;">데이터크롤링을 이용한 웹사이트 입니다.</li>
-        </p>
-  <a class = "btn btn-dark mr-3 btn-lg"href = "signup.html" role = "button" style="border-style:">회원가입하기</a>
-      </center>
-    </div>   
    </div>
 </html>
+
+
+
+
+
+
